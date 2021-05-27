@@ -8,6 +8,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import Button from "@material-ui/core/Button";
+import Divider from "@material-ui/core/Divider";
 
 import { connect } from "react-redux";
 
@@ -42,13 +43,12 @@ function Addshifts() {
       <div className={classes.root} style={{ marginBottom: "100px" }}>
         <Container>
           <Grid container spacing={2}>
-            
-              <Grid item xs={12}>
+            <Grid item xs={12}>
               <h2 className={(classes.paper, "marginTopHome1")}>
-              {currentPageName} </h2>
-              <Divider style={{marginTop:'20px'}} variant="middle" />
+                {currentPageName}{" "}
+              </h2>
+              <Divider style={{ marginTop: "20px" }} variant="middle" />
             </Grid>
-           
 
             <Grid item xs={12}>
               <h2 className="choosedate">Choose an avilable date</h2>
